@@ -1,0 +1,357 @@
+@keyframes linkhover {
+  0% {
+    text-shadow: 0px 0px 20px;
+  }
+  50% {
+    text-shadow: 0px 0px 15px;
+    font-size: 20.5px;
+    padding-top: 29.25px;
+    padding-bottom: 29.25px;
+  }
+  100% {
+    text-shadow: 0px 0px 20px;
+  }
+}
+
+@keyframes pan {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+@keyframes socialhover {
+  0% {
+    text-shadow: 0px 0px 20px;
+  }
+  50% {
+    text-shadow: 0px 0px 15px;
+    font-size: 20.5px;
+    padding-top: 29.25px;
+    padding-bottom: 29.25px;
+  }
+  100% {
+    text-shadow: 0px 0px 20px;
+  }
+}
+
+@keyframes timradiation {
+  0% {
+    box-shadow: 0px 0px 200px white;
+  }
+  50% {
+    box-shadow: 0px 0px 100px white;
+  }
+  100% {
+    box-shadow: 0px 0px 200px white;
+  }
+}
+
+body {
+  background-image: linear-gradient(#896f8c, #5d455f, #5d455f);
+  padding: 0;
+  margin: 0;
+}
+
+.everythingelse {
+  margin: 8px;
+}
+
+#background {
+  background-image: url("IMG_5570.png");
+  background-size: 20%;
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  translate: -50% 0%;
+  z-index: -2;
+  height: 100%;
+  width: 100%;
+  opacity: 0.2;
+  animation: pan 180s linear infinite;
+}
+
+#background2 {
+  background-image: linear-gradient(#896f8c00, #5d455f);
+  position: absolute;
+  left: 50%;
+  translate: -50% 0%;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+h1 {
+  text-decoration: underline;
+  color: #c0b6bf;
+  padding: 2px 25px;
+  margin: auto auto;
+  font-family: Arial, sans-serif;
+}
+
+.headerlink {
+  text-align: center;
+  padding: 30px 0px;
+  position: relative;
+  width: 300px;
+  margin: auto auto;
+  color: #c0b6bf;
+  text-decoration-line: none;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+}
+
+#header {
+  border: 3px solid #593865;
+  margin: 0px auto;
+  padding: 5px;
+  border-radius: 0px;
+  background-color: #613c6e;
+  display: flex;
+  box-shadow: 0px 4px 10px #29192db6;
+  max-width: 100%;
+  position: relative;
+}
+
+@media screen and (min-width: 750px) {
+  #header {
+    border: 3px solid #593865;
+    margin: 3px auto;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #613c6e;
+    display: flex;
+    box-shadow: 0px 4px 10px #29192db6;
+    max-width: 800px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    translate: 0% 0%;
+  }
+
+  body {
+    margin: 8px;
+  }
+}
+
+#abouting p {
+  color: #c0b6bf;
+  font-size: 20px;
+}
+
+.space {
+  padding: 20px;
+}
+
+#tim {
+  display: block;
+  margin: 15% auto;
+  width: 40%;
+  max-width: 700px;
+  box-shadow: 0px 0px 200px white;
+  animation-name: timradiation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+#tim:hover {
+  display: block;
+  margin: 14% auto;
+  max-width: 710px;
+  width: 41%;
+  box-shadow: 0px 0px 200px white;
+  animation-name: timradiation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@media screen and (min-width: 750px) {
+  #tim {
+    display: block;
+    margin: 150px auto;
+    width: 40%;
+    max-width: 700px;
+  }
+
+  #tim:hover {
+    display: block;
+    margin: 140px auto;
+    width: 41%;
+    max-width: 710px;
+  }
+}
+
+.maincontent {
+  max-width: 430px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.greeting {
+  font-size: 21px;
+  max-width: 50%;
+  color: #c0b6bf;
+}
+
+#greetingtext {
+  padding: 20px 10px;
+  color: #c0b6bf;
+}
+
+#awards {
+  margin: 0 auto;
+  width: 120px;
+  color: #c0b6bf;
+}
+
+#bottom {
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 50px 0px;
+  text-align: center;
+  position: relative;
+  color: white;
+}
+
+#bottomtim {
+  width: 20px;
+  position: relative;
+  color: #c0b6bf;
+  right: 65 px;
+  top: 5px;
+}
+
+.social {
+  padding: 30px 10px;
+}
+
+#socials {
+  text-align: center;
+  padding: 30px 0px;
+  padding-left: 2vh;
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+  color: #c0b6bf;
+  font-size: 20px;
+}
+
+.social:hover {
+  animation-name: socialhover;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.25, 0.25, 0.385, 1); /* custom */
+}
+
+#awardshelf {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#awardshelf img {
+  max-width: 150px;
+  max-height: 150px;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  #awardshelf {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+#yap {
+  max-height: 200px;
+  max-width: 200px;
+  float: none;
+  display: inline;
+  vertical-align: top;
+  padding: 5% 5% 0% 0%;
+}
+
+#abouting {
+  background-color: #5d455f;
+  padding: 50px;
+  margin: 0 auto;
+  border-top: 7px solid #3c313d;
+  box-shadow: 0px 4px 10px #29192d2b;
+  max-width: 600px;
+}
+
+.headerlink:hover {
+  color: #d3cbd3;
+  text-shadow: 0px 0px 10px #adadad;
+  animation-name: linkhover;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.25, 0.25, 0.385, 1); /* custom */
+}
+
+#tiktok:hover {
+  color: #a4eae8;
+  text-shadow: 0px 0px 10px #2af0ea;
+}
+
+#insta:hover {
+  color: #dc9ab8;
+  text-shadow: 0px 0px 10px #d62976;
+}
+
+#tumblr:hover {
+  color: #b6c0ce;
+  text-shadow: 0px 0px 10px #6e819c;
+}
+
+.socialmedias {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.socialmediasheader {
+  width: 350px;
+  margin: auto auto;
+  color: #c0b6bf;
+}
+
+@media (max-width: 600px) {
+  .socialmedias {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.socialmedias a {
+  font-size: 20px;
+  border: 3px solid #3c313d;
+  border-radius: 40px;
+  background-color: #5d455f;
+  padding: 15px;
+  margin: 10px 4px;
+  box-shadow: 0px 4px 20px #29192d70;
+  flex-direction: column;
+  align-items: center;
+  color: #c0b6bf;
+}
+
+.socialmedias a:hover {
+  box-shadow: 0px 4px 40px #29192d70;
+  padding: 18px;
+  background-color: #674e69;
+  margin: 7px 1px;
+}
+
+.aboutmetext {
+  margin: auto;
+  max-width: 500px;
+  font-size: 50px;
+  color: #c0b6bf;
+}
