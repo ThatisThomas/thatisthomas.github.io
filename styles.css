@@ -99,14 +99,15 @@ h1 {
   margin: auto auto;
   color: #c0b6bf;
   text-decoration-line: none;
-  font-size: 20px;
+  font-size: 15px;
   font-family: Arial, sans-serif;
 }
 
 #header {
+  font-size: 10px;
   border: 3px solid #593865;
   margin: 0px auto;
-  padding: 5px;
+  padding: 0px 5px;
   border-radius: 0px;
   background-color: #613c6e;
   display: flex;
@@ -249,6 +250,15 @@ h1 {
   animation-timing-function: cubic-bezier(0.25, 0.25, 0.385, 1); /* custom */
 }
 
+@media screen and (min-width: 400px) {
+  #header {
+    font-size: 15px;
+  }
+  .headerlink {
+    font-size: 20px;
+  }
+}
+
 #awardshelf {
   max-width: 700px;
   margin: 0 auto;
@@ -363,6 +373,10 @@ h1 {
   border: 3px solid #3c313d;
   border-radius: 40px;
   box-shadow: 0px 4px 20px #29192d70;
+}
+
+#greenthumbs:hover {
+  border: 3px solid #554956;
 }
 
 .aboutmetext {
